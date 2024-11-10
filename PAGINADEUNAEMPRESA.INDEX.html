@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Soluciones Empresariales</title>
+    <!-- Enlace a estilos CSS externos (opcional) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header style="background-color: #00274d; color: #ffffff; padding: 1em; text-align: center;">
+        <h1>Soluciones Empresariales</h1>
+        <nav>
+            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 1em; padding: 0;">
+                <li><a href="#servicios" style="color: #ffcc00; text-decoration: none;">Servicios</a></li>
+                <li><a href="#nosotros" style="color: #ffcc00; text-decoration: none;">Nosotros</a></li>
+                <li><a href="#contacto" style="color: #ffcc00; text-decoration: none;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero" style="background-color: #f2f6f9; color: #00274d; text-align: center; padding: 3em;">
+        <h2>Impulsamos tu Éxito con Soluciones Innovadoras</h2>
+        <p>Nos dedicamos a proporcionar servicios empresariales que transforman y potencian tu negocio.</p>
+        <a href="#servicios" style="display: inline-block; background-color: #ffcc00; color: #00274d; padding: 0.8em 1.5em; border-radius: 5px; text-decoration: none; font-weight: bold;">Ver Servicios</a>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" style="padding: 2em; text-align: center; background-color: #ffffff;">
+        <h3 style="color: #00274d;">Nuestros Servicios</h3>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1em; margin-top: 1em;">
+            <div style="background-color: #e0e7ff; padding: 1.5em; border-radius: 8px; width: 30%; min-width: 250px;">
+                <h4 style="color: #00274d;">Consultoría Empresarial</h4>
+                <p>Ofrecemos asesoría para mejorar procesos y optimizar la gestión de tu empresa.</p>
+            </div>
+            <div style="background-color: #e0e7ff; padding: 1.5em; border-radius: 8px; width: 30%; min-width: 250px;">
+                <h4 style="color: #00274d;">Desarrollo de Software</h4>
+                <p>Creamos aplicaciones personalizadas que se ajustan a las necesidades de tu negocio.</p>
+            </div>
+            <div style="background-color: #e0e7ff; padding: 1.5em; border-radius: 8px; width: 30%; min-width: 250px;">
+                <h4 style="color: #00274d;">Marketing Digital</h4>
+                <p>Impulsamos tu marca en el mundo digital con estrategias efectivas y medibles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" style="padding: 2em; background-color: #f2f6f9; color: #00274d; text-align: center;">
+        <h3>Sobre Nosotros</h3>
+        <p>En Soluciones Empresariales, nos especializamos en ofrecer servicios de alta calidad que ayudan a nuestros clientes a alcanzar el éxito. Nuestro equipo de expertos está comprometido en brindar soluciones personalizadas y efectivas.</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" style="padding: 2em; background-color: #ffffff; text-align: center;">
+        <h3 style="color: #00274d;">Contáctanos</h3>
+        <form action="enviar_formulario.php" method="POST" style="max-width: 500px; margin: 0 auto; text-align: left;">
+            <label for="nombre" style="color: #00274d;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.5em; margin: 0.5em 0; border-radius: 5px; border: 1px solid #d0d4e5;">
+
+            <label for="email" style="color: #00274d;">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5em; margin: 0.5em 0; border-radius: 5px; border: 1px solid #d0d4e5;">
+
+            <label for="mensaje" style="color: #00274d;">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required style="width: 100%; padding: 0.5em; margin: 0.5em 0; border-radius: 5px; border: 1px solid #d0d4e5;"></textarea>
+
+            <button type="submit" style="background-color: #00274d; color: #ffffff; padding: 0.7em 1.5em; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer style="background-color: #00274d; color: #ffffff; text-align: center; padding: 1em;">
+        <p>&copy; 2024 Soluciones Empresariales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
